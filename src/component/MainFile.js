@@ -12,7 +12,7 @@ function MainFile() {
     const docRef = await db.doc(id);
     const docData = await docRef.get();
 
-    setData(docData);
+    setData(docData.data());
   };
 
   useEffect(() => {
